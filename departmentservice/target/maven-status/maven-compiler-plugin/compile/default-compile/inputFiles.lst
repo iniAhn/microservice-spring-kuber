@@ -1,6 +1,0 @@
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/departmentservice/src/main/java/com/crossent/services/departmentservice/controller/DepartmentController.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/departmentservice/src/main/java/com/crossent/services/departmentservice/repository/DepartmentRepository.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/departmentservice/src/main/java/com/crossent/services/departmentservice/DepartmentApplication.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/departmentservice/src/main/java/com/crossent/services/departmentservice/model/Employee.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/departmentservice/src/main/java/com/crossent/services/departmentservice/model/Department.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/departmentservice/src/main/java/com/crossent/services/departmentservice/client/EmployeeClient.java

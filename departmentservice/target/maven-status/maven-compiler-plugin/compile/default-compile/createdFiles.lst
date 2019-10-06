@@ -1,6 +1,0 @@
-com/crossent/services/departmentservice/repository/DepartmentRepository.class
-com/crossent/services/departmentservice/DepartmentApplication.class
-com/crossent/services/departmentservice/model/Department.class
-com/crossent/services/departmentservice/client/EmployeeClient.class
-com/crossent/services/departmentservice/model/Employee.class
-com/crossent/services/departmentservice/controller/DepartmentController.class

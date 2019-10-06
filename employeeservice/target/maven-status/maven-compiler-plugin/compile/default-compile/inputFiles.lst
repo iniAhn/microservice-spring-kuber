@@ -1,4 +1,0 @@
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/employeeservice/src/main/java/com/crossent/services/employeeservice/model/Employee.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/employeeservice/src/main/java/com/crossent/services/employeeservice/repository/EmployeeRepository.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/employeeservice/src/main/java/com/crossent/services/employeeservice/controller/EmployeeController.java
-/devops/workspaces/crossent/template-spring-microservices-kubernetes/employeeservice/src/main/java/com/crossent/services/employeeservice/EmployeeApplication.java

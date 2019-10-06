@@ -1,8 +1,0 @@
-com/crossent/services/organizationservice/client/DepartmentClient.class
-com/crossent/services/organizationservice/client/EmployeeClient.class
-com/crossent/services/organizationservice/controller/OrganizationController.class
-com/crossent/services/organizationservice/model/Employee.class
-com/crossent/services/organizationservice/OrganizationApplication.class
-com/crossent/services/organizationservice/repository/OrganizationRepository.class
-com/crossent/services/organizationservice/model/Department.class
-com/crossent/services/organizationservice/model/Organization.class
