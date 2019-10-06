@@ -1,0 +1,7 @@
+Spring Cloud Kubernetes requires access to Kubernetes API in order to be able to retrieve a list of address of pods running for a single service.
+If you use Kubernetes you should just execute the following command:
+
+cmd : kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default
+
+ingress service 를 이용 하기 위하여
+cmd : minikube addons enable ingress

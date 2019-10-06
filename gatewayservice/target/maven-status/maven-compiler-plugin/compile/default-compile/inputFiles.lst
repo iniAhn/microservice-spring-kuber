@@ -1,0 +1,2 @@
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/gatewayservice/src/main/java/com/crossent/services/gatewayservice/GatewayApplication.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/gatewayservice/src/main/java/com/crossent/services/gatewayservice/api/GatewayApi.java

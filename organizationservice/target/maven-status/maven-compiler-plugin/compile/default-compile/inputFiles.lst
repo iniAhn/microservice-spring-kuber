@@ -1,0 +1,8 @@
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/model/Department.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/client/EmployeeClient.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/model/Organization.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/client/DepartmentClient.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/OrganizationApplication.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/repository/OrganizationRepository.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/controller/OrganizationController.java
+/devops/workspaces/crossent/template-spring-microservices-kubernetes/organizationservice/src/main/java/com/crossent/services/organizationservice/model/Employee.java
