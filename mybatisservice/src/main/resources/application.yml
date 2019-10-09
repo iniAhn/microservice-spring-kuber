@@ -1,7 +1,9 @@
 spring:
+  application:
+    name: mybatisservice
   datasource:
     hikari:
-      driver-class-name: org.mariadb.jdbc.Driver
-      jdbc-url: jdbc:mariadb://${MARIADB_HOST}:${MARIADB_PORT}/${MARIADB_SERVICE}
-      username: ${MARIADB_USERNAME}
-      password: ${MARIADB_PASSWORD}
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://mysql/${MYSQL_DATABASE}?useSSL=false
+      username: ${MYSQL_USER}
+      password: ${MYSQL_PASSWORD}
