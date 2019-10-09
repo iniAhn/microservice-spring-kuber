@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    hikari:
+      driver-class-name: org.mariadb.jdbc.Driver
+      jdbc-url: jdbc:mariadb://${MARIADB_HOST}:${MARIADB_PORT}/${MARIADB_SERVICE}
+      username: ${MARIADB_USERNAME}
+      password: ${MARIADB_PASSWORD}

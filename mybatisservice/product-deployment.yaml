@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mybatisservice
+  labels:
+    app: product
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mybatisservice
+  template:
+    metadata:
+      labels:
+        app: mybatisservice
+    spec:
+      containers:
+        - name: mybatisservice
+          image: sskkrr12/mybatisservice:1.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MARIADB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: mariadb
+                  key: database-name
+            - name: MARIADB_PORT
+                valueFrom:
+                  configMapKeyRef:
+                    name: mariadb
+                    key: database-port
+            - name: MARIADB_SERVICE
+              valueFrom:
+                secretKeyRef:
+                  name: mariadb
+                  key: database-service
+            - name: MARIADB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mariadb
+                  key: database-user
+            - name: MARIADB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mariadb
+                  key: database-password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mybatisservice
+  labels:
+    app: mybatisservice
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+  selector:
+    app: mybatisservice
