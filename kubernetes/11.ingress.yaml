@@ -3,28 +3,25 @@ kind: Ingress
 metadata:
   name: gateway-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
-  backend:
-    serviceName: default-http-backend
-    servicePort: 80
   rules:
     - host: microservices.info
       http:
         paths:
-          - path: /employee/*
+          - path: /employee/?(.*)
             backend:
               serviceName: employee
               servicePort: 8080
-          - path: /department/*
+          - path: /department/?(.*)
             backend:
               serviceName: department
               servicePort: 8080
-          - path: /organization/*
+          - path: /organization/?(.*)
             backend:
               serviceName: organization
               servicePort: 8080
-          - path: /mybatisservice/*
+          - path: /mb/?(.*)
             backend:
               serviceName: mybatisservice
               servicePort: 8080
