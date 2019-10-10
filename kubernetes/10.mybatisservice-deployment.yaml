@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mybatisservice
+  labels:
+    app: mybatisservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mybatisservice
+  template:
+    metadata:
+      labels:
+        app: mybatisservice
+    spec:
+      containers:
+      - name: mybatisservice
+        image: sskkrr12/mybatisservice:8.0
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MYSQL_DATABASE
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_DATABASE
+        - name: MYSQL_USER
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_USER
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_PASSWORD
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mybatisservice
+  labels:
+    app: mybatisservice
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: mybatisservice

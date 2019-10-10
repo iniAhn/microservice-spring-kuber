@@ -14,3 +14,5 @@ zuul:
       path: /employee/**
     organization:
       path: /organization/**
+    mybatisservice:
+      path: /mybatisservice/**

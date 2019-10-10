@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gateway-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  rules:
+    - host: microservices.info
+      http:
+        paths:
+          - path: /employee/?(.*)
+            backend:
+              serviceName: employee
+              servicePort: 8080
+          - path: /department/?(.*)
+            backend:
+              serviceName: department
+              servicePort: 8080
+          - path: /organization/?(.*)
+            backend:
+              serviceName: organization
+              servicePort: 8080
+          - path: /mb/?(.*)
+            backend:
+              serviceName: mybatisservice
+              servicePort: 8080

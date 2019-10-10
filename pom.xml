@@ -17,6 +17,8 @@
 		<module>departmentservice</module>
 		<module>organizationservice</module>
 		<module>gatewayservice</module>
+		<module>productservice</module>
+		<module>mybatisservice</module>
 	</modules>
 	
 </project>

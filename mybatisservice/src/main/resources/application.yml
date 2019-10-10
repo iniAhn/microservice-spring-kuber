@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: mybatisservice
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://mysql/${MYSQL_DATABASE}?useSSL=false
+      username: ${MYSQL_USER}
+      password: ${MYSQL_PASSWORD}
