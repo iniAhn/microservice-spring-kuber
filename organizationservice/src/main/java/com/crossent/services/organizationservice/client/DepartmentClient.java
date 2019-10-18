@@ -10,10 +10,10 @@ import java.util.List;
 @FeignClient(name = "department")
 public interface DepartmentClient {
 
-	@GetMapping("/organization/{organizationId}")
-	public List<Department> findByOrganization(@PathVariable("organizationId") String organizationId);
-	
-	@GetMapping("/organization/{organizationId}/with-employees")
-	public List<Department> findByOrganizationWithEmployees(@PathVariable("organizationId") String organizationId);
+	@GetMapping("/helloWorld")
+	public String helloWorld();
+
+	@GetMapping(path = "/{name}/{test}")
+	public String testInsert(@PathVariable("name") String name,@PathVariable("test") String test);
 	
 }

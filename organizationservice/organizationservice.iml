@@ -143,13 +143,6 @@
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.2.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-mongodb:2.1.9.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.8.2" level="project" />
-    <orderEntry type="library" name="Maven: org.mongodb:bson:3.8.2" level="project" />
-    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.8.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:2.1.11.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.10.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-sleuth:2.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-sleuth-core:2.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.4" level="project" />

@@ -16,25 +16,25 @@ spec:
     spec:
       containers:
       - name: department
-        image: sskkrr12/department:1.0
+        image: sskkrr12/departmentservice:3.0
         ports:
         - containerPort: 8080
         env:
-        - name: MONGO_DATABASE
-          valueFrom:
-            configMapKeyRef:
-              name: mongodb
-              key: database-name
-        - name: MONGO_USERNAME
-          valueFrom:
-            secretKeyRef:
-              name: mongodb
-              key: database-user
-        - name: MONGO_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mongodb
-              key: database-password
+          - name: MYSQL_DATABASE
+            valueFrom:
+              secretKeyRef:
+               name: mysql-secret
+               key: MYSQL_DATABASE
+          - name: MYSQL_USER
+            valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: MYSQL_USER
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: MYSQL_PASSWORD
 ---
 apiVersion: v1
 kind: Service

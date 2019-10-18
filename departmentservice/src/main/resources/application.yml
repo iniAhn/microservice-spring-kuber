@@ -1,10 +1,9 @@
 spring:
   application:
-    name: department
-  data:
-    mongodb:
-      uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@mongodb/${MONGO_DATABASE}
-      
-logging:
-  pattern: 
-    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+    name: deparmentservice
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://mysql/${MYSQL_DATABASE}?useSSL=false
+      username: ${MYSQL_USER}
+      password: ${MYSQL_PASSWORD}

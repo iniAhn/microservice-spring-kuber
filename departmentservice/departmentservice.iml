@@ -166,5 +166,14 @@
     <orderEntry type="library" name="Maven: io.zipkin.brave:brave-instrumentation-spring-webmvc:5.6.1" level="project" />
     <orderEntry type="library" name="Maven: io.zipkin.brave:brave-instrumentation-servlet:5.6.1" level="project" />
     <orderEntry type="library" name="Maven: io.zipkin.brave:brave-instrumentation-jms:5.6.1" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.17" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:2.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
   </component>
 </module>

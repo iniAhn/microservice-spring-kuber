@@ -16,7 +16,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-@EnableMongoRepositories
 @EnableSwagger2
 public class DepartmentApplication {
 	
